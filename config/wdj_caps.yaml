@@ -1,0 +1,20 @@
+platformName: Android
+# 模拟器
+platformVersion: 4.4.2
+deviceName: 127.0.0.1:62001
+
+# mx4真机
+# platformName: 5.1.1
+# udid: 手机的udid
+# deviceName: MX4
+
+appname: wandoujia.apk
+appPackage: com.wandoujia.phoenix2
+appActivity: com.pp.assistant.activity.PPMainActivity
+
+noReset: False
+unicodeKeyboard: True
+resetKeyboard: True
+
+ip: 127.0.0.1
+port: 4723
