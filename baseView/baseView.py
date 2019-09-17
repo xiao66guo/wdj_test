@@ -14,7 +14,7 @@ class BaseView(object):
         return self.driver.find_elements(*location)
 
     # 返回屏幕的尺寸
-    def get_window_size(self):
+    def get_screen_size(self):
         return self.driver.get_window_size()
 
     # 滑动操作
