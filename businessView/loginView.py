@@ -41,6 +41,7 @@ class login_view(general_view):
             element.click()
         try:
             out_element = self.driver.find_element(*self.logout_element)
+            logging.info('Is logged in')
         except NoSuchElementException:
             pass
         else:
