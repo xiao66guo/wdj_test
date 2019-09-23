@@ -5,7 +5,7 @@ from baseView.baseView import BaseView
 from selenium.common.exceptions import NoSuchElementException
 from general.xg_caps import appium_caps
 from selenium.webdriver.common.by import By
-import logging, time, os
+import logging, time, os, csv
 
 class general_view(BaseView):
     cancelBtn = (By.ID, 'com.wandoujia.phoenix2:id/s5')
@@ -69,6 +69,14 @@ class general_view(BaseView):
 
         logging.info('get %s screenicon' % module)
         self.driver.get_screenshot_as_file(image_file)
+
+    def get_csv_data(self, csv_file, line):
+        logging.info('get_csv_data，读取csv文件中的账户名和密码')
+        with open(csv_file, 'r', encoding='utf-8-sig') as file:
+            reader = csv.reader(file)
+            for index, row in enumerate(reader, 1):
+                if index == line:
+                    return row
 
 if __name__ == '__main__':
     driver = appium_caps()
