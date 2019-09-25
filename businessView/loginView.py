@@ -47,7 +47,7 @@ class login_view(general_view):
         else:
             out_element.click()
         self.driver.find_element(*self.loginImmediately_element).click()
-        logging.info('username is：%s' % username)
+        logging.info('username is：*************')
         self.driver.find_element(*self.username_element).send_keys(username)
         logging.info('password is：*************')
         self.driver.find_element(*self.password_element).send_keys(password)
@@ -59,5 +59,5 @@ class login_view(general_view):
 
 if __name__ == '__main__':
     driver = appium_caps()
-    login = login_view(driver)
-    login.login_action('xiao66guo@163.com', 'weixiaoguo')
+    # login = login_view(driver)
+    # login.login_action('用户名', '密码')
