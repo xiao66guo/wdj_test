@@ -19,3 +19,6 @@
 
  **框架设计图** 
 ![输入图片说明](https://images.gitee.com/uploads/images/2019/0925/155109_d9c71999_638207.png "wdj自动化测试框架思路图.png")
+
+ **测试报告** 
+![输入图片说明](https://images.gitee.com/uploads/images/2019/0925/173416_abf77313_638207.gif "wdj测试报告.gif")
