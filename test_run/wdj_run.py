@@ -1,9 +1,14 @@
 # -*- coding:utf-8 -*-
 __author__ = 'xiaoguo'
 
+import sys, os
+location = os.path.dirname(os.path.dirname(__file__)) + '/'
+sys.path.append(location)
+# location = '/Users/weixiaoguo/Desktop/工作/practicesTest/wdj_test/'
+# sys.path.append(location)
+
 from BSTestRunner import BSTestRunner
-import logging, unittest
-from general.general_view import general_view
+import logging, unittest, time
 
 # 指定测试用例和测试报告的路径
 test_dir = '../test_case'
@@ -13,8 +18,7 @@ report_dir = '../reports'
 discover = unittest.defaultTestLoader.discover(test_dir, pattern='xg_login.py')
 
 # 定义测试报告的文件格式
-# now = time.strftime('%Y-%m-%d %H_%M_%S')
-now = general_view.getTime()
+now = time.strftime('%Y-%m-%d %H_%M_%S')
 report_name = report_dir + '/' + now + 'wdj_TestReport.html'
 
 # 执行测试用例并生成测试报告
