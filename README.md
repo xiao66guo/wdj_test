@@ -1,39 +1,24 @@
-# wdj_test
+本项目是一个简单的测试项目，集成了测试中用的几种元素定位、手势操作、数据配置、单元测试、日志文件、测试报告、测试用例、Pageobject设计模式等，主要是对wdj项目的登录功能进行的测试，从csv文件中读取准备好的一些测试用到的用户名、密码，从yaml文件中读取数据的配置信息；
 
-#### 介绍
-{**以下是码云平台说明，您可以替换此简介**
-码云是 OSCHINA 推出的基于 Git 的代码托管平台（同时支持 SVN）。专为开发者提供稳定、高效、安全的云端软件开发协作平台
-无论是个人、团队、或是企业，都能够用码云实现代码托管、项目管理、协作开发。企业项目请看 [https://gitee.com/enterprises](https://gitee.com/enterprises)}
+ **框架的大概功能如下：** 
+- 业务功能的封装
+- 测试用例的封装
+- 测试包的管理
+- 截图处理
+- 日志的获取
+- 测试报告的生成
+- 数据配置
+- 数据驱动
 
-#### 软件架构
-软件架构说明
+ **测试环境** 
+- MacBook Air
+- Python3.6
+- Appium 1.13.0
+- wdj Android版 5.71.21
+- 夜神模拟器 Android 4.4.2
 
+ **框架设计图** 
+![输入图片说明](https://images.gitee.com/uploads/images/2019/0925/155109_d9c71999_638207.png "wdj自动化测试框架思路图.png")
 
-#### 安装教程
-
-1. xxxx
-2. xxxx
-3. xxxx
-
-#### 使用说明
-
-1. xxxx
-2. xxxx
-3. xxxx
-
-#### 参与贡献
-
-1. Fork 本仓库
-2. 新建 Feat_xxx 分支
-3. 提交代码
-4. 新建 Pull Request
-
-
-#### 码云特技
-
-1. 使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2. 码云官方博客 [blog.gitee.com](https://blog.gitee.com)
-3. 你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解码云上的优秀开源项目
-4. [GVP](https://gitee.com/gvp) 全称是码云最有价值开源项目，是码云综合评定出的优秀开源项目
-5. 码云官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6. 码云封面人物是一档用来展示码云会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+ **测试报告** 
+![输入图片说明](https://images.gitee.com/uploads/images/2019/0925/173416_abf77313_638207.gif "wdj测试报告.gif")
