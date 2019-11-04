@@ -19,6 +19,7 @@ discover = unittest.defaultTestLoader.discover(test_dir, pattern='xg_login.py')
 
 # 定义测试报告的文件格式
 now = time.strftime('%Y-%m-%d %H_%M_%S')
+#now = general_view.getTime()
 report_name = report_dir + '/' + now + 'wdj_TestReport.html'
 
 # 执行测试用例并生成测试报告
